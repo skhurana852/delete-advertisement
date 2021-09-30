@@ -49,7 +49,7 @@ class Delete:
                 url=delete_uri, data=body, headers=self.headers
             )
             if response.text == "":
-                print(DELETE_MSG)
+                print(f"{len(ids)} {DELETE_MSG}")
         except Exception:
             print(ERR_MSG)
 
